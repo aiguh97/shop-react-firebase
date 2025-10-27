@@ -132,7 +132,7 @@ function App() {
     <LazyMotion features={domAnimation}>
       <HelmetProvider>
         <GoogleReCaptchaProvider
-          reCaptchaKey="6LdQtjcrAAAAAB-gw9QaVLt8zIUTcvWAjCmlVwDs"
+          reCaptchaKey="6Lcv4_grAAAAAO9BMlpgrApsuSjLUGrxWZcfU5IC"
           scriptProps={{
             async: true, // Async load to improve page load time
             defer: true,
