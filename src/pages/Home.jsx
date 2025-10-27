@@ -55,7 +55,8 @@ function Home() {
         });
 
         const filteredProducts = productList.filter(product => product.showOnHome);
-        setProducts(filteredProducts);
+        // setProducts(filteredProducts);
+        setProducts(productList)
         console.log('✅ Fresh products data loaded');
 
       } catch (error) {

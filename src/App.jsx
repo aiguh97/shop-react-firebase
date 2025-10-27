@@ -30,6 +30,7 @@ import PasswordReset from './pages/PasswordReset';
 import OrderSummary from './pages/OrderSummary';
 import { GoogleReCaptchaProvider } from 'react-google-recaptcha-v3';
 import { HelmetProvider } from 'react-helmet-async';
+import { domAnimation, LazyMotion } from "framer-motion";
 // import { LazyMotion, domAnimation } from "framer-motion";
 
 /**
@@ -128,7 +129,7 @@ function App() {
   }
 
   return (
-    // <LazyMotion features={domAnimation}>
+    <LazyMotion features={domAnimation}>
       <HelmetProvider>
         <GoogleReCaptchaProvider
           reCaptchaKey="6LdQtjcrAAAAAB-gw9QaVLt8zIUTcvWAjCmlVwDs"
@@ -208,7 +209,7 @@ function App() {
           </Router>
         </GoogleReCaptchaProvider>
       </HelmetProvider>
-    // </LazyMotion>
+    </LazyMotion>
   );
 }
 
